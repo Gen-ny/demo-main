@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emiCare</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/5618685989.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">emiCare</a>
+            <ul class="nav-bar" id="nav-bar">
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div id="index" class="sec-title">
+            <div class="title-head">
+                <h5>WELCOME TO EMICARE</h5>
+            </div>
+            <div class="title-bar">
+                <h1>We are here for your Care</h1>
+                <button><a href="#">Make an appointment</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div id="about" class="about">
+        <img src="images/img1.jpg" alt="A doctor talking to a patient">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>The emiCare Health Centre is located in Kumasi, the capital of the Ashanti region, with a
+                total population of 5,432,485 (national population census, 2021).
+            </p>
+            <p>The geographical location of the 1,200-bed hospital, the road network of the country, and the unique
+                commercial setting of Kumasi make the hospital accessible to all remaining fifteen (15) regions of the
+                country, especially those that share boundaries with the Ashanti region.
+            </p>
+            <br><br>
+            <h2>Our Vision</h2>
+            <p>To become a centre of excellence in the provision of specialist healthcare services.</p>
+            <br><br>
+            <h2>Our Mission</h2>
+            <p>To provide quality services to meet the needs and expectations of all its clients. This will be achieved
+                through well-motivated and committed staff applying best practice and innovativeness.</p>
+        </div>
+    </div>
+
+    <section id="services" class="services">
+        <div class="services-container">
+            <div class="services-h1">
+                <h1>Our Services</h1>
+            </div>
+            <div class="service-container">
+                <div class="service-cards-grid">
+                    <div class="service-card">
+                        <div class="icon-rounded">
+                            <i class="fa-solid fa-truck-medical"></i>
+                        </div>
+                        <div class="service-description">
+                            <h2 class="service-title">Emergency Services</h2>
+                            <p>The goal is to protect patients, staff, and facilities while ensuring continuity of operations.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-rounded">
+                            <i class="fa-solid fa-user-md"></i>
+                        </div>
+                        <div class="service-description">
+                            <h2 class="service-title">Qualified Doctors</h2>
+                            <p>Well-equipped with professional doctors that have completed full medical training in a specialised area of medicine.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-rounded">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div class="service-description">
+                            <h2 class="service-title">Outdoors Checkup</h2>
+                            <p>We provide general health assessment and screening that takes place within communities.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-rounded">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="service-description">
+                            <h2 class="service-title">24 Hours Service</h2>
+                            <p>Always available and ready anytime, everyday.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="free-consultation-section">
+            <div class="free">
+                <h4>FREE CONSULTATION</h4>
+                <form action="" class="form">
+                    <div>
+                        <input type="text" id="fname" placeholder="First Name" name="first_name" required>
+                    </div>
+                    <div>
+                        <input type="text" id="lname" placeholder="Last Name" name="last_name" required>
+                    </div>
+                    <div>
+                        <input list="services" placeholder="Select Your Services" name="selected_service" required>
+                        <datalist id="services">
+                            <option value="Emergency Services">
+                            <option value="Anaesthesia & Intensive Care">
+                            <option value="Child Health">
+                            <option value="Family Medicine">
+                            <option value="Obstetrics & Gynaecology">
+                            <option value="Radiology">
+                            <option value="Oral Health">
+                            <option value="Ears, Eyes, Nose & Throat">
+                            <option value="Family Planning">
+                            <option value="Nutrition & Dietetics">
+                            <option value="Surgery">
+                            <option value="Trauma & Orthopedics">
+                            <option value="Others">
+                        </datalist>
+                    </div>
+                    <div>
+                        <input type="number" id="pn" placeholder="Phone" name="phone" required>
+                    </div>
+                    <div>
+                        <input type="date" id="date" placeholder="Date" name="appointment_date" required>
+                    </div>
+                    <div>
+                        <input type="text" id="msg" placeholder="Message" name="message" required>
+                    </div>
+                    <button type="submit">Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="maps">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.775367669074!2d-1.621415125345717!3d6.671391593319043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96b460d3d527%3A0x6e9a65977a4563a9!2sKomfo%20Anokye%20Teaching%20Hospital%20(KATH)!5e0!3m2!1sen!2sgh!4v1719574765620!5m2!1sen!2sgh"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact">
+            <h4>CONTACT US</h4>
+            <p>Hotlines: +233 245 311 716</p>
+            <p>Address: P.O Box 9 Ahodwo-Kumasi</p>
+            <p>Email: info@emiCare.gov.gh</p>
+        </div>
+
+        <div class="social-footer">
+            <h4>FOLLOW US</h4>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="social-sector">
+                <i class="fa-solid fa-hospital"></i>
+                <p>EMICARE HEALTH CENTRE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
